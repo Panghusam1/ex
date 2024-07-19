@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Bundle Name="ex" Version="1.0.0.0" Manufacturer="MyCompany" UpgradeCode="78CE9FB4-B17C-4BC0-9F5F-29961B681EF7">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense" />
+    <Chain>
+      <MsiPackage SourceFile="exSetup.msi" />
+    </Chain>
+  </Bundle>
+</Wix>

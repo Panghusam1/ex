@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="MainExecutable" Guid="78CE9FB4-B17C-4BC0-9F5F-29961B681EF7">
+        <File Source="..\bin\Release\net5.0-windows\ex.exe" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+    <ComponentGroup Id="ProductComponents">
+      <ComponentRef Id="MainExecutable" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>
